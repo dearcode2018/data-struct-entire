@@ -11,12 +11,16 @@
 
 【项目规划】
 
-1)
-
+1) 下载安装protoc-win64
+https://github.com/protocolbuffers/protobuf/releases
+解压，设置$PATH运行路径
 2)
 
-3)
-
+3) 执行
+protoc -I=$PROTO_PATH --java_out=$JAVA_SRC_PATH $PROTO_PATH/$ProtoFilename --experimental_allow_proto3_optional
+$PROTO_PATH: proto源文件目录
+$JAVA_SRC_PATH: 输出的java代码路径
+protoc -I=E:\workspace\java\data-struct-entire\protobuf\src\main\resources --java_out=E:\workspace\java\data-struct-entire\protobuf\src\main\java E:\workspace\java\data-struct-entire\protobuf\src\main\resources\Person.proto --experimental_allow_proto3_optional
 4)
 
 5)
